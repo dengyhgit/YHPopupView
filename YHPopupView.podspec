@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/dengyhgit/YHPopupView"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
+  s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "DengYonghao" => "cbyniypeu@163.com" }
   s.source           = { :git => "https://github.com/dengyhgit/YHPopupView.git", :tag => s.version.to_s }
 
