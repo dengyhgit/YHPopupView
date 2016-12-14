@@ -79,8 +79,9 @@
     [self presentMessageView:messageView];
 }
 
+#pragma mark - YHMessageView Delegate
 - (void)tapMessageView:(YHMessageView *)messageView {
-    NSLog(@"tapMessageView");
+    NSLog(@"tap messageView");
 }
 
 @end

@@ -10,6 +10,8 @@ A pubilic popup view, **YHPopupView**, is provided on iOS. And it can be used an
 
 ![demo](Images/0.png)
 
+![demo](Images/0.gif)
+
 
 Installation
 ============
@@ -30,6 +32,9 @@ pod 'YHPopupView', :head
 
 Usage
 ===============
+
+###YHPopupView
+
 ```objc
 #import "ViewController.h"
 #import "YHPopupView.h"
@@ -48,8 +53,29 @@ Usage
 @end
 ```
 
+###YHMessageView
+```objc
+- (IBAction)showMessageView:(id)sender {
+    YHMessageView *messageView = [[YHMessageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 80)];
+    messageView.showTime = 3;
+    messageView.backgroundColor = [[UIColor alloc] initWithWhite:0 alpha:0.5];
+    messageView.delegate = self;
+    [messageView addSubview:label];
+    [self presentMessageView:messageView];
+}
+
+#pragma mark - YHMessageView Delegate
+- (void)tapMessageView:(YHMessageView *)messageView {
+    NSLog(@"tap messageView");
+}
+
+@end
+```
+
 
 Changelog
 ===============
+
+v0.2.0  add YHMessageView
 
 v0.1.0  first version
