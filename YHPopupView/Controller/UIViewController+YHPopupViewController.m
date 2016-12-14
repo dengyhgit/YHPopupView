@@ -52,8 +52,11 @@
 }
 
 #pragma mark - public method
+- (void)presentPopupView:(UIView *)popupView {
+    [self p_presentPopupView:popupView];
+}
+
 - (void)presentPopupView:(UIView *)popupView animation:(id<YHPopupAnimation>)animation {
-    
     self.popupAnimation = animation;
     [self p_presentPopupView:popupView];
     if (animation) {
@@ -61,33 +64,24 @@
     }
 }
 
-- (void)presentPopupView:(UIView *)popupView {
-    [self p_presentPopupView:popupView];
-}
-
 - (void)dismissPopupView {
     [self.overlayView removeFromSuperview];
     [self.popupView removeFromSuperview];
+    self.overlayView = nil;
     self.popupView = nil;
     self.popupAnimation = nil;
 }
 
 - (void)dismissPopupViewWithAnimation:(id<YHPopupAnimation>)animation {
     if (animation) {
+        __weak __typeof(&*self)weakSelf = self;
         [animation dismissView:self.popupView overlayView:self.overlayView completion:^(void) {
-            [self.overlayView removeFromSuperview];
-            [self.popupView removeFromSuperview];
-            self.popupView = nil;
-            self.popupAnimation = nil;
+            [weakSelf dismissPopupView];
         }];
     }else{
-        [self.overlayView removeFromSuperview];
-        [self.popupView removeFromSuperview];
-        self.popupView = nil;
-        self.popupAnimation = nil;
+        [self dismissPopupView];
     }
 }
-
 
 #pragma mark - private method
 - (void)p_dismissPopupView{
@@ -111,7 +105,7 @@
         overlayView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         overlayView.backgroundColor = [UIColor clearColor];
         
-        UIView *backgroundView = [[UIView alloc]initWithFrame:sourceView.bounds];
+        UIView *backgroundView = [[UIView alloc] initWithFrame:sourceView.bounds];
         backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         backgroundView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
         backgroundView.tag = BackgoundViewTag;
@@ -132,7 +126,6 @@
     [sourceView addSubview:self.overlayView];
     self.overlayView.alpha = 1.0f;
 }
-
 
 - (UIView *)topView {
     UIViewController *recentView = self;

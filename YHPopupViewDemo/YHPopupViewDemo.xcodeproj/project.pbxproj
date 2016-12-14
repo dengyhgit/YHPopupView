@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B45938981DFE3BC30039A8FD /* YHMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B45938971DFE3BC30039A8FD /* YHMessageView.m */; };
 		B472BE751DF178BA00249E3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BE741DF178BA00249E3B /* main.m */; };
 		B472BE781DF178BA00249E3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BE771DF178BA00249E3B /* AppDelegate.m */; };
 		B472BE7B1DF178BA00249E3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BE7A1DF178BA00249E3B /* ViewController.m */; };
@@ -15,9 +16,10 @@
 		B472BE831DF178BA00249E3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B472BE811DF178BA00249E3B /* LaunchScreen.storyboard */; };
 		B472BE8E1DF178BA00249E3B /* YHPopupViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BE8D1DF178BA00249E3B /* YHPopupViewDemoTests.m */; };
 		B472BE991DF178BA00249E3B /* YHPopupViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BE981DF178BA00249E3B /* YHPopupViewDemoUITests.m */; };
-		B472BEAD1DF178E900249E3B /* UIViewController+YHPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BEA81DF178E900249E3B /* UIViewController+YHPopupViewController.m */; };
 		B472BEAE1DF178E900249E3B /* YHPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BEAA1DF178E900249E3B /* YHPopupView.m */; };
 		B472BEAF1DF178E900249E3B /* YHPopupViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B472BEAC1DF178E900249E3B /* YHPopupViewAnimation.m */; };
+		B4B76C5A1DFF8FE400A0C003 /* UIViewController+YHPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B76C591DFF8FE400A0C003 /* UIViewController+YHPopupViewController.m */; };
+		B4B76C5D1DFF900900A0C003 /* UIViewController+YHMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B76C5C1DFF900900A0C003 /* UIViewController+YHMessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B45938961DFE3BC30039A8FD /* YHMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHMessageView.h; sourceTree = "<group>"; };
+		B45938971DFE3BC30039A8FD /* YHMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHMessageView.m; sourceTree = "<group>"; };
 		B472BE701DF178BA00249E3B /* YHPopupViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHPopupViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B472BE741DF178BA00249E3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B472BE761DF178BA00249E3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,12 +58,14 @@
 		B472BE941DF178BA00249E3B /* YHPopupViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHPopupViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B472BE981DF178BA00249E3B /* YHPopupViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHPopupViewDemoUITests.m; sourceTree = "<group>"; };
 		B472BE9A1DF178BA00249E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B472BEA71DF178E900249E3B /* UIViewController+YHPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHPopupViewController.h"; sourceTree = "<group>"; };
-		B472BEA81DF178E900249E3B /* UIViewController+YHPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YHPopupViewController.m"; sourceTree = "<group>"; };
 		B472BEA91DF178E900249E3B /* YHPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPopupView.h; sourceTree = "<group>"; };
 		B472BEAA1DF178E900249E3B /* YHPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPopupView.m; sourceTree = "<group>"; };
 		B472BEAB1DF178E900249E3B /* YHPopupViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPopupViewAnimation.h; sourceTree = "<group>"; };
 		B472BEAC1DF178E900249E3B /* YHPopupViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPopupViewAnimation.m; sourceTree = "<group>"; };
+		B4B76C581DFF8FE400A0C003 /* UIViewController+YHPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHPopupViewController.h"; sourceTree = "<group>"; };
+		B4B76C591DFF8FE400A0C003 /* UIViewController+YHPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YHPopupViewController.m"; sourceTree = "<group>"; };
+		B4B76C5B1DFF900900A0C003 /* UIViewController+YHMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHMessageViewController.h"; sourceTree = "<group>"; };
+		B4B76C5C1DFF900900A0C003 /* UIViewController+YHMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YHMessageViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,15 +159,27 @@
 		B472BEA61DF178E900249E3B /* YHPopupView */ = {
 			isa = PBXGroup;
 			children = (
-				B472BEA71DF178E900249E3B /* UIViewController+YHPopupViewController.h */,
-				B472BEA81DF178E900249E3B /* UIViewController+YHPopupViewController.m */,
+				B4B76C571DFF8FE400A0C003 /* Controller */,
 				B472BEA91DF178E900249E3B /* YHPopupView.h */,
 				B472BEAA1DF178E900249E3B /* YHPopupView.m */,
 				B472BEAB1DF178E900249E3B /* YHPopupViewAnimation.h */,
 				B472BEAC1DF178E900249E3B /* YHPopupViewAnimation.m */,
+				B45938961DFE3BC30039A8FD /* YHMessageView.h */,
+				B45938971DFE3BC30039A8FD /* YHMessageView.m */,
 			);
 			name = YHPopupView;
 			path = ../../YHPopupView;
+			sourceTree = "<group>";
+		};
+		B4B76C571DFF8FE400A0C003 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4B76C581DFF8FE400A0C003 /* UIViewController+YHPopupViewController.h */,
+				B4B76C591DFF8FE400A0C003 /* UIViewController+YHPopupViewController.m */,
+				B4B76C5B1DFF900900A0C003 /* UIViewController+YHMessageViewController.h */,
+				B4B76C5C1DFF900900A0C003 /* UIViewController+YHMessageViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B472BEAE1DF178E900249E3B /* YHPopupView.m in Sources */,
+				B4B76C5D1DFF900900A0C003 /* UIViewController+YHMessageViewController.m in Sources */,
 				B472BE7B1DF178BA00249E3B /* ViewController.m in Sources */,
+				B45938981DFE3BC30039A8FD /* YHMessageView.m in Sources */,
 				B472BE781DF178BA00249E3B /* AppDelegate.m in Sources */,
 				B472BE751DF178BA00249E3B /* main.m in Sources */,
-				B472BEAD1DF178E900249E3B /* UIViewController+YHPopupViewController.m in Sources */,
 				B472BEAF1DF178E900249E3B /* YHPopupViewAnimation.m in Sources */,
+				B4B76C5A1DFF8FE400A0C003 /* UIViewController+YHPopupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9PF5ASX4BR;
 				INFOPLIST_FILE = YHPopupViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengyonghao.YHPopupViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,6 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9PF5ASX4BR;
 				INFOPLIST_FILE = YHPopupViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengyonghao.YHPopupViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +563,7 @@
 				B472BE9F1DF178BA00249E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B472BEA01DF178BA00249E3B /* Build configuration list for PBXNativeTarget "YHPopupViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +572,7 @@
 				B472BEA21DF178BA00249E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B472BEA31DF178BA00249E3B /* Build configuration list for PBXNativeTarget "YHPopupViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +581,7 @@
 				B472BEA51DF178BA00249E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
