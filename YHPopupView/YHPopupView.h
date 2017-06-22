@@ -13,6 +13,7 @@
 @interface YHPopupView : UIView
 
 @property(nonatomic, assign) BOOL clickBlankSpaceDismiss;
+@property(nonatomic, strong) UIColor *backgroundViewColor;
 
 - (instancetype)initWithFrame:(CGRect)frame;
 

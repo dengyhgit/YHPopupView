@@ -107,12 +107,15 @@
         
         UIView *backgroundView = [[UIView alloc] initWithFrame:sourceView.bounds];
         backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        backgroundView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
+        backgroundView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
         backgroundView.tag = BackgoundViewTag;
         [overlayView addSubview:backgroundView];
         
         if ([popupView isKindOfClass:[YHPopupView class]]) {
             YHPopupView *pv = (YHPopupView *)popupView;
+            if (pv.backgroundViewColor) {
+                backgroundView.backgroundColor = pv.backgroundViewColor;
+            }
             if (pv.clickBlankSpaceDismiss) {
                 UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(p_dismissPopupView)];
                 tap.delegate = self;

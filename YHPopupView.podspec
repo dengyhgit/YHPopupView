@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "YHPopupView"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "A popup view used on iOS."
   s.description      = <<-DESC
                        It is a popup view used on iOS, which implement by Objective-C.
